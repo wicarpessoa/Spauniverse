@@ -1,0 +1,116 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  font-size: 62.5%;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-image: url(../assets/home.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bg-home {
+  background-image: url(../assets/home.png);
+}
+.bg-exploration {
+  background-image: url(../assets/exploration.png);
+}
+.bg-universe {
+  background-image: url(../assets/universe.png);
+}
+nav {
+  display: flex;
+  gap: clamp(1rem, 5vw, 3.2rem);
+  align-items: center;
+  margin: 4rem 0 0 clamp(2.8rem, 6vw, 7.2rem);
+}
+nav a {
+  text-decoration: none;
+  color: #c4c4cc;
+  font-style: normal;
+  font-weight: 400;
+  font-size: clamp(1.6rem, 3vw, 2.4rem);
+  line-height: 2.2rem;
+
+  white-space: nowrap;
+}
+.active-link {
+  color: #ffffff;
+  font-weight: 700;
+}
+
+nav svg {
+  width: clamp(3.8rem, 8vw, 5rem);
+  height: clamp(3rem, 8vw, 4.2rem);
+}
+
+h1 {
+  color: white;
+}
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 40rem;
+  margin: auto;
+  align-items: center;
+  margin-top: clamp(10rem, 8vw, 17.2rem);
+
+  color: #ffffff;
+}
+h2 {
+  font-weight: 700;
+  font-size: clamp(2.6rem, 8vw, 4.8rem);
+  line-height: 6rem;
+}
+.title-home {
+  margin-bottom: 2.4rem;
+}
+.button-home {
+  border: 2px solid #ffffff;
+  border-radius: 5px;
+
+  color: #ffffff;
+
+  background-color: transparent;
+  padding: 1.2rem 3.2rem;
+
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.button-home:hover {
+  color: #02799d;
+
+  background-color: #ffffff;
+}
+.universe-container {
+  color: #e1e1e6;
+
+  display: flex;
+  flex-direction: column;
+
+  max-width: 64.8rem;
+
+  margin: clamp(3rem, 8vh, 10.3rem) 0 0 clamp(6rem, 10vw, 10.3rem);
+}
+.universe-title {
+  margin-bottom: clamp(0rem, 1vw, 1.6rem);
+}
+.p-text {
+  font-size: clamp(1rem, 4vw, 1.8rem);
+  line-height: clamp(1.8rem, 5vw, 2.9rem);
+}
+
+@media (max-width: 700px) {
+  .universe-container {
+    margin: clamp(2rem, 5vw, 10.3rem) 3rem 0 3rem;
+  }
+}
